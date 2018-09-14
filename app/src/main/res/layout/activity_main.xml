@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textTypeofBurg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type of Burger"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <RadioGroup
+        android:id="@+id/RadGroupBurgers"
+        android:layout_below="@id/textTypeofBurg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+        android:id="@+id/RadChicken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chicken"
+        android:onClick="onCheckedRadioButton"
+            />
+
+        <RadioButton
+            android:id="@+id/RadBeef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beef"
+            android:onClick="onCheckedRadioButton"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/TxtAddons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add-ons:"
+        android:layout_below="@id/RadGroupBurgers"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/CheckBacon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bacon"
+        android:layout_below="@+id/TxtAddons"/>
+
+    <CheckBox
+        android:id="@+id/CheckPineapple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pineapple"
+        android:layout_below="@+id/CheckBacon"/>
+
+    <CheckBox
+        android:id="@+id/CheckLettuce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lettuce"
+        android:layout_below="@+id/CheckPineapple"/>
+
+    <CheckBox
+        android:id="@+id/CheckPickles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pickles"
+        android:layout_below="@+id/CheckLettuce"/>
+
+    <CheckBox
+        android:id="@+id/CheckCheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cheese"
+        android:layout_below="@+id/CheckPickles"/>
+
+    <CheckBox
+        android:id="@+id/CheckMustard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mustard"
+        android:layout_below="@+id/CheckCheese"/>
+
+    <EditText
+        android:id="@+id/ETName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CheckMustard"
+        android:hint="Name"/>
+
+    <EditText
+        android:id="@+id/ETPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ETName"
+        android:hint="Phone Number"/>
+
+
+    <EditText
+        android:id="@+id/ETAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ETPhone"
+        android:hint="Address"/>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ETAddress"
+        app:srcCompat="?android:attr/textCheckMark" />
+
+
+
+</RelativeLayout>
